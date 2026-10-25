@@ -11,3 +11,35 @@
 @media(max-width:760px){html{scroll-padding-top:86px}.wrap{width:calc(100% - 40px)}.header-inner{width:calc(100% - 40px);min-height:76px;gap:20px}.brand img{width:123px}.site-header nav{display:none}.header-cta{font-size:10px;padding:10px 13px;gap:15px}.header-cta span{font-size:17px}.hero{display:flex;flex-direction:column;padding-block:44px 30px;min-height:0;align-items:stretch}.hero h1{font-size:clamp(30px,5.8vw,43px);letter-spacing:.03em;line-height:1.65;margin-bottom:19px}.hero .eyebrow{font-size:9px;margin-bottom:23px}.product-name{font-size:16px;margin-bottom:12px}.hero-description{font-size:12px;line-height:2.05;margin-bottom:24px}.hero-actions{gap:19px;margin-bottom:20px;flex-wrap:nowrap}.hero-actions .button{font-size:12px;padding:16px 18px;gap:23px}.price-note{font-size:10px}.price-note strong{font-size:21px}.hero .text-link{font-size:10px}.hero-art{height:325px;margin:30px 0 0;width:100%;max-width:540px;align-self:center;border-radius:46% 46% 8px 8px}.scene{width:580px;max-width:155vw;top:0;transform:translateX(-50%)}.art-label{top:16px;left:17px;right:17px;font-size:6px}.program-note{left:14px;bottom:42px}.note-label{font-size:7px}.mini-block{font-size:9px;padding:8px 9px;width:113px;gap:10px}.mini-block b{font-size:12px}.art-bottom{font-size:8px;bottom:12px}.hero-art:before{width:220px;height:220px;top:20px;right:20px}.facts{grid-template-columns:1fr 1fr;row-gap:15px;padding-block:20px;font-size:9px}.facts>span:first-child b{font-size:18px}.facts>span:nth-child(3){border:0}.facts>span{min-height:25px;display:flex;gap:3px;align-items:center;justify-content:center}.section{padding-block:65px}.section-heading{text-align:left;margin-bottom:30px}.section-heading h2,h2{font-size:27px;letter-spacing:.035em}.eyebrow{font-size:9px;letter-spacing:.15em;margin-bottom:18px}.section-heading>p:last-child{font-size:12px;line-height:2.1}.desktop-br{display:none}.play-layout{display:flex;flex-direction:column;gap:28px;align-items:stretch}.window-bar{font-size:6px;padding:10px}.game-figure{border-radius:6px}.game-figure figcaption{font-size:8px;padding:10px}.play-steps{gap:22px}.play-steps li{gap:16px}.play-steps h3{font-size:16px}.play-steps p{font-size:12px}.step-number{font-size:25px}.pace-note{padding:18px;gap:17px;margin-top:30px}.small-star{font-size:33px}.pace-note strong{font-size:12px}.pace-note p{font-size:10px;line-height:1.9}.curriculum-heading{display:block;margin-bottom:25px}.curriculum-heading h2{font-size:29px;margin-bottom:20px}.curriculum-heading>p{font-size:12px;line-height:2.1}.mission-tabs{gap:3px}.mission-tabs button{padding:14px 7px 13px}.mission-tabs button small{font-size:7px;letter-spacing:.02em}.mission-tabs button>span{font-size:11px;letter-spacing:0}.mission-list li{padding:21px 4px;gap:12px}.mission-no{font-size:27px;min-width:32px}.mission-list h3{font-size:13px}.mission-list p{font-size:10px;line-height:1.9}.mission-theme{font-size:8px;padding:2px 8px;min-width:50px;margin-left:4px}.mission-footer{gap:12px;padding:25px 0 0}.badge-icon{font-size:34px}.mission-footer p{font-size:10px}.mission-footer p span{font-size:8px}.mission-count{font-size:35px;gap:5px;display:flex;flex-direction:column;line-height:1}.mission-count span{font-size:6px}.classroom-grid{grid-template-columns:1fr;gap:35px}.classroom h2{font-size:29px}.classroom-intro{font-size:12px;margin-bottom:25px}.license-highlight{padding:22px}.license-highlight>span{font-size:7px}.license-highlight p{font-size:21px}.license-highlight small{font-size:10px}.classroom-details article{padding-block:24px}.classroom-details h3{font-size:16px}.classroom-details p{font-size:12px}.classroom-details article>span{font-size:8px}.purchase{padding-bottom:50px}.purchase-top h2{font-size:30px}.purchase-top>p:last-child{font-size:11px}.purchase-box{padding:28px 24px 20px;grid-template-columns:1fr;gap:23px;margin-top:28px}.price-block{text-align:center}.price{font-size:53px}.purchase-action .button{font-size:13px;padding:19px 23px}.purchase-action p{font-size:9px}.included{display:block;text-align:center;padding-top:17px;line-height:2}.included>span{display:block;margin-bottom:5px}.included p{font-size:9px}.faq{display:block;padding-top:10px;padding-bottom:65px}.faq-heading h2{font-size:25px;margin-bottom:25px}.faq-heading .eyebrow{font-size:8px;margin-bottom:12px}summary{font-size:12px;padding:21px 0;gap:15px}.answer{font-size:11px;padding-right:15px}.footer-inner{display:grid;grid-template-columns:1fr 1fr;gap:16px}.site-footer img{width:110px}.site-footer p{grid-row:2;grid-column:1/-1;font-size:8px}.footer-store{font-size:9px;justify-self:end}.footer-inner small{grid-column:1/-1;font-size:8px}.site-footer{padding-block:27px}}
 @media(max-width:370px){.wrap,.header-inner{width:calc(100% - 32px)}.hero h1{font-size:28px}.hero-actions{gap:10px}.hero-actions .button{font-size:11px;padding:15px 13px;gap:13px}.price-note strong{font-size:18px}.mission-tabs button>span{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Desktop reading sizes */
+@media (min-width:761px){
+  .eyebrow{font-size:13px}
+  .site-header nav{font-size:14px}
+  .price-note{font-size:13px}
+  .text-link{font-size:13px}
+  .mini-block{font-size:14px;width:170px}
+  .art-bottom{font-size:12px}
+  .facts{font-size:13px}
+  .play-steps p{font-size:14px}
+  .pace-note p{font-size:13px}
+  .mission-list p{font-size:14px}
+  .mission-theme{font-size:12px}
+  .mission-footer p{font-size:14px}
+  .mission-footer p span{font-size:12px}
+  .noscript-note{font-size:14px}
+  .license-highlight small{font-size:12px}
+  .classroom-details p{font-size:14px}
+  .classroom-details small{font-size:12px}
+  .purchase-tag{font-size:12px}
+  .payment-note{font-size:13px}
+  .purchase-action p{font-size:12px}
+  .included{font-size:12px}
+  .answer{font-size:14px}
+  .footer-store{font-size:12px}
+}
+@media (min-width:761px) and (max-width:1100px){
+  .art-bottom{font-size:8px}
+  .play-steps p{font-size:13px}
+  .facts{font-size:12px}
+}
