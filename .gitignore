@@ -1,0 +1,7 @@
+# Local files
+.DS_Store
+preview-*.png
+.openai/
+.env
+.env.*
+!.env.example
