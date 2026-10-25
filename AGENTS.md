@@ -4,6 +4,8 @@
 
 - GitHubの `origin` は `dev-tadakuma/codechips-lp-block-squirrel` を使う。
 - 配信用ファイルは `dist/`。ビルド不要のHTML・CSS・JavaScript構成を維持する。
+- 想定公開URLは `http://lp.codechips.net/block-squirrel/`。画像・CSS・JavaScript・faviconはページからの相対パスで指定し、ドメイン直下や特定の配置先に固定しない。`<base>` でパスを固定しない。
+- canonicalとOGPのページURLは想定公開URL、OGP画像は同URL配下の絶対URLを使用する。
 - 主な読者は先生・教室運営者。主な導線はBOOTH販売ページ。
 - 教材の単位は「ミッション」。対象年齢・授業時間・口コミ・導入実績を推測で追加しない。
 - 利用条件は制作者の確認済みのv1.0.4を優先する。独自コードの改変・改変版の再配布には事前許諾の確認が必要。noteの旧記述に合わせて許可へ変更しない。

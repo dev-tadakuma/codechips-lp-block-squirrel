@@ -43,7 +43,31 @@ note記事では改変を許可する記述がありますが、制作者の2026
 
 画像は制作者の既存素材を使用しています。このリポジトリに実行可能なゲーム本体は含みません。元のゲームや参照資料は編集していません。リポジトリの公開はコード・文章・画像の再利用許諾を意味しません。
 
-## 現在の公開先
+## 本番配置先
+
+想定する公開URLは **http://lp.codechips.net/block-squirrel/** です。`dist/` の**中身**を、公開サーバーの `block-squirrel/` フォルダ内に配置します。
+
+```text
+lp.codechips.net/
+└── block-squirrel/
+    ├── index.html
+    ├── style.css
+    ├── story.css
+    ├── script.js
+    └── assets/
+        ├── codechips-logo.svg
+        ├── favicon.svg
+        ├── forest-scene.jpg
+        └── game-screen.jpg
+```
+
+画像・CSS・JavaScript・faviconは `./assets/...`、`./style.css` などの相対パスで読み込みます。ページ内リンクもそのページ内で完結し、`lp.codechips.net/` 直下の他のLPと共存できます。配置先を固定する `<base>` タグは使用しません。
+
+検索エンジン向けのcanonicalとSNS共有時の `og:url` は本番URL、`og:image` は `http://lp.codechips.net/block-squirrel/assets/forest-scene.jpg` を指定しています。これらは共有・検索用のメタデータで、ページ表示時の素材の読み込み先には使いません。
+
+本番サーバーへの転送・自動デプロイは設定していません。上記のフォルダ配置で利用してください。URL末尾の `/` を保つか、サーバー側で `/block-squirrel` から `/block-squirrel/` へ転送してください。
+
+## 確認用サイト
 
 [確認用サイト](https://codechips-squirrel-learning.dev-tadakuma.chatgpt.site)はSitesで本人限定公開しています。このGitHubリポジトリへのpushは、SitesやGitHub Pagesへの自動公開を行いません。公開設定を変更する際は、閲覧範囲と公開先を確認してください。
 
