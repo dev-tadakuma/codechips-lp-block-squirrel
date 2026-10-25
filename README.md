@@ -3,7 +3,7 @@
 Code Chips「リスのどんぐり探し」の紹介ページです。先生・教室運営者に教材の内容と利用条件を伝え、BOOTHの購入ページへ案内します。
 
 - [BOOTH販売ページ](https://codechips.booth.pm/items/8985783)
-- [制作・紹介記事（note）](https://note.com/codechips/n/nb9d37ec4cf61)
+- [制作・紹介記事（note）](https://note.com/codechips/n/n9092956a442b)
 - [紹介動画（YouTube）](https://www.youtube.com/watch?v=UJUndfORpl0)
 
 ## ページの内容
