@@ -33,6 +33,8 @@ python3 -m http.server 4317 --bind 127.0.0.1 --directory dist
 | `dist/style.css` | ページ全体のデザインとレスポンシブ表示 |
 | `dist/story.css` | 紹介動画、学習ポイント、授業での問いかけ、制作ノートの表示 |
 | `dist/script.js` | ミッションの内容とタブ切り替え |
+| `dist/shared/lp-common.css` | Code Chips LPの共通フォント・色・見出し・ボタン |
+| `docs/LP-STYLE-GUIDE.md` | Code Chips LPの共通スタイル仕様 |
 | `dist/assets/` | 実際のゲーム画像とCode Chipsのロゴ |
 
 JavaScriptの構文確認は `node --check dist/script.js` で行えます。`dist/` 全体を静的サイトとして配信できます。
@@ -45,6 +47,14 @@ note記事では改変を許可する記述がありますが、制作者の2026
 
 画像は制作者の既存素材を使用しています。このリポジトリに実行可能なゲーム本体は含みません。元のゲームや参照資料は編集していません。リポジトリの公開はコード・文章・画像の再利用許諾を意味しません。
 
+## 共通スタイル
+
+Code Chips LP Styleの共通仕様を適用しています。本文・見出し・ボタン・数字にはGoogle FontsのNoto Sans JP（400〜900）を読み込み、h1・h2は900。強調色は赤 `#F44336` と緑 `#00754a`、教室セクションの濃緑背景は `#006241` です。ヒーローの見出し内の強調は緑、eyebrowは親から色を継承します。
+
+仕様は `docs/LP-STYLE-GUIDE.md`、共通CSSは `dist/shared/lp-common.css` に保持し、既存CSSの後から読み込みます。ヒーローの画像枠はアーチや破線を使わず、角丸20pxの一続きの枠にしています。ロゴとゲーム画面の画像内文字は元の素材のままです。
+
+商品情報、ページ構成、PC用に拡大済みの文字サイズ、動画、リンク、アクセス解析はそのまま保持しています。
+
 ## 紹介動画
 
 動画IDは `UJUndfORpl0` です。`dist/index.html` の冒頭付近（教材概要の直後）に、YouTubeのプライバシー強化モードのプレーヤーを16:9で埋め込んでいます。自動再生はせず、全画面表示に対応します。ヒーローとヘッダーの「紹介動画」から移動できます。
@@ -55,7 +65,7 @@ note記事では改変を許可する記述がありますが、制作者の2026
 
 Google アナリティクス（GA4）の測定IDは `G-LFLGPGCN23` です。`dist/index.html` のhead内にGoogleタグ（gtag.js）を設定しています。測定IDを変更するときは、タグの読み込みURLと `gtag('config', ...)` の両方を更新してください。
 
-本番への配置後に、Google アナリティクスのリアルタイム表示またはTag Assistantで受信を確認してください。Googleから読み込む解析スクリプト以外の、LPの画像・CSS・JavaScriptは相対パスを維持しています。
+本番への配置後に、Google アナリティクスのリアルタイム表示またはTag Assistantで受信を確認してください。Google Fonts・解析タグ・YouTubeの外部サービスを除き、LPの画像・CSS・JavaScriptは相対パスを維持しています。
 
 ## 本番配置先
 
@@ -68,6 +78,8 @@ lp.codechips.net/
     ├── style.css
     ├── story.css
     ├── script.js
+    ├── shared/
+    │   └── lp-common.css
     └── assets/
         ├── codechips-logo.svg
         ├── favicon.svg

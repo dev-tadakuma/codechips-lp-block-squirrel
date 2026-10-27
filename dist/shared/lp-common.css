@@ -1,0 +1,42 @@
+/* Code Chips LP common style — 2026-10-27 */
+:root {
+  --red: #F44336;
+  --green: #00754a;
+  --green-dark: #006241;
+  --sans: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  /* Compatibility for earlier LPs that used this variable for headings. */
+  --serif: var(--sans);
+}
+
+body { font-family: var(--sans); }
+button, input, select, textarea { font-family: inherit; }
+h1, h2, .hero h1 {
+  font-family: var(--sans);
+  font-weight: 900;
+}
+.price, .mission-no, .step-number, .mission-count {
+  font-family: var(--sans);
+}
+
+/* Eyebrows have no color declaration: remove competing rules in the LP. */
+.hero h1 span { color: var(--green); }
+.classroom, .section--green { background: var(--green-dark); }
+.dot { background: var(--red); }
+.button.primary {
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 4px 0 #b71c1c;
+}
+.button.primary:hover {
+  background: #d32f2f;
+  border-color: #d32f2f;
+}
+.site-header nav a:hover,
+.text-link:hover,
+.step-number,
+.teacher-prompts > div > span { color: var(--red); }
+
+/* One continuous rounded frame; no overlapping arch decoration. */
+.mining-art { border-radius: 20px; }
+.mining-art::before { content: none; }
